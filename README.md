@@ -25,3 +25,21 @@ or use the installed java to run the application
 ``` bash
 java -jar ./target/minimum-0.0.1-SNAPSHOT.jar
 ```
+
+## File structure for [src] folder
+``` bash 
+src
+├── [main]
+|   ├── [java]
+|   │   └── [rezans]
+│   |   ├── MinimumApplication.java
+│   |   └── ReconTool.java
+│   └── [resources]
+│       ├── application.properties
+│       ├── [static]
+│       └── [templates]
+└── [test]
+    └── [java]
+        └── rezans
+            └── MinimumApplicationTests.java
+```

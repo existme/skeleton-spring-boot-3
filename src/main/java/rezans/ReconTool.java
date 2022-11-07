@@ -1,4 +1,4 @@
-package com.example.minimum;
+package rezans;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
