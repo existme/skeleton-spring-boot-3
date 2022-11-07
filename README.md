@@ -43,3 +43,12 @@ src
         └── rezans
             └── MinimumApplicationTests.java
 ```
+
+## Making the jar file executable
+To make the jar file executable the main portion that should be added to the pom file, is this section:
+``` xml
+    <configuration>
+        <executable>true</executable>
+    </configuration> 
+```
+this should be added to the `build`>`plugin`>`spring-boot-maven-plugin` in the `pom.xml` file.
