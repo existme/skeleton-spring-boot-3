@@ -26,6 +26,22 @@ or use the installed java to run the application
 java -jar ./target/minimum-0.0.1-SNAPSHOT.jar
 ```
 
+## Remove the bogus warning "Re-registering of platform native method" for a JVMTI agent
+### IntelliJ
+Edit the `run` configuration and click on `add vm options (alt+v)`. In the vm options add `-Xlog:jni+resolve=off`
+
+### CLI: running with `java`
+Run as follows:
+``` shell
+java ./target/minimum-0.0.1-SNAPSHOT.jar -Xlog:jni+resolve=off
+```
+
+### CLI: spring-boot-executable
+Run as follows:
+``` shell
+JAVA_OPTS='-Xlog:jni+resolve=off' ./target/minimum-0.0.1-SNAPSHOT.jar
+```
+
 ## File structure for [src] folder
 ``` bash 
 src
